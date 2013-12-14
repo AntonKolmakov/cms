@@ -1,0 +1,18 @@
+<% content_for :title, @page.name %>
+
+<div class="large-1 columns">
+	<div id="submenu">
+	  <%= render 'submenu_pages', pages: @page.root.descendants.arrange %>
+	</div>
+</div>
+<div class="large-11 columns side-right">
+
+	<p id="notice"><%= notice %></p>
+
+	<h1><%= @page.name %></h1>
+
+	<%= simple_format @page.content %>
+</div>
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
