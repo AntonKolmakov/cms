@@ -6,4 +6,5 @@ class Page < ActiveRecord::Base
   									format: { with: VALID_REGEX }
 
   has_ancestry
+ 
 end

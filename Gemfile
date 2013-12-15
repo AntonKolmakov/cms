@@ -22,11 +22,12 @@ end
 gem 'jquery-rails'
 gem 'ancestry'
 gem 'foundation-rails'
-
+gem 'rack-mini-profiler'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 group :development do
